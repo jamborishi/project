@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.login-form {
+  position: relative;
+  box-sizing: border-box;
+  padding: 60px 30px;
+}
+.login-form h1 {
+  font-size: 30px;
+  margin: 0 0 20px;
+  color: blue;
+  text-transform: uppercase;
+}
+.login-form a {
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  color: coral;
+  font-size: 18px;
+}
+.login-form i {
+  text-align: center;
+  display: block;
+}
+.login-form input {
+  width: 100%;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 128, 0.2);
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  /* border-radius: 5px; */
+}
+/* for fontawesome icon placing inside input field */
+.login-form input[type="text"] {
+  font-family: FontAwesome;
+}
+.login-form input[type="password"] {
+  font-family: FontAwesome;
+}
+.login-form input[type="submit"] {
+  background: #0072ff;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+  background: #005aca;
+}
+.detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+  text-align: center;
+}
+label {
+  display: block;
+  padding: 4px;
+  margin: 2px;
+}
+.submit input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background: #005aca;
+  margin: 1%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.submit input:hover {
+  color: #fff;
+  background: #0072ff;
+}
+.show {
+  border: 1px solid black;
+  margin: 1% 20%;
+}
+.show h4 {
+  color: crimson;
+  display: inline-block;
+  padding: 2px;
+  margin: 16px 0;
+}
+.show h3 {
+  display: inline-block;
+  padding: 2px;
+  margin: 16px 0;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  background: #005aca;
+  border: 1px solid #005aca;
+  padding: 8px;
+  border-radius: 20px;
+}

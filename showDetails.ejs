@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Details</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/navbar.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <% if(CurrentUser ){%>
+        <li><a href="#">SignedIn As <%=CurrentUser.username%></a></li>
+        <li><a href="/logout">SignOut</a></li>
+        <%}%>
+      </ul>
+    </nav>
+    <h1>Welcome to details</h1>
+    <div class="show">
+      <h4>FirstName</h4>
+      :
+      <h3><%=detail.FirstName%></h3>
+      <hr />
+      <%if(!(detail.MiddleName=='')){%>
+      <h4>MiddleName</h4>
+      :
+      <h3><%=detail.MiddleName%></h3>
+      <hr />
+      <%}%> <%if(!(detail.LastName=='')){%>
+      <h4>LastName</h4>
+      :
+      <h3><%=detail.LastName%></h3>
+      <hr />
+      <%}%>
+      <h4>EmailID</h4>
+      :
+      <h3><%=detail.EmailId%></h3>
+      <hr />
+      <h4>Age</h4>
+      :
+      <h3><%=detail.Age%></h3>
+      <hr />
+      <h4>Degree</h4>
+      :
+      <h3><%=detail.Degree%></h3>
+      <hr />
+      <h4>Branch</h4>
+      :
+      <h3><%=detail.Branch%></h3>
+      <hr />
+      <h4>NativePlace</h4>
+      :
+      <h3><%=detail.NativePlace%></h3>
+    </div>
+    <a href="/addDetails" class="link">AddDetails</a>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").toggleClass("active");
+          // $("ul li").toggleClass("ac");
+        });
+      });
+    </script>
+  </body>
+</html>
